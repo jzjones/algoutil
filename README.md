@@ -6,4 +6,4 @@ The goal of this package is to accelerate Algorand smart contract development by
 
 ## Install
 
- - `yarn add algoutil`
+ - `yarn add algoutils`

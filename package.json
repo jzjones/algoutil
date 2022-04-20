@@ -1,5 +1,5 @@
 {
-  "name": "algoutil",
+  "name": "algoutils",
   "version": "0.0.1",
   "description": "Utility framework for Algorand projects",
   "main": "lib/index.js",
