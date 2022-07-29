@@ -14,7 +14,8 @@ export async function compileTeal(programSource: string) {
 }
 
 export async function compilePyTeal(filename: string, params?: {[key: string]: string | number}) {
-  const contractOutput = await execAsync(`python3 ${filename} '${JSON.stringify(params)}'`);
+  const pythonAlias = process.env.PYTHON_ALIAS || "python3";
+  const contractOutput = await execAsync(`${pythonAlias} ${filename} '${JSON.stringify(params)}'`);
   const tealCode = contractOutput.stdout;
   const binaryCode = await compileTeal(tealCode);
   return binaryCode;
