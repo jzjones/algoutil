@@ -19,7 +19,7 @@
     "docs": "typedoc src/index.ts --options typedoc.config.json"
   },
   "dependencies": {
-    "algosdk": "^1.17.0"
+    "algosdk": "^1.19.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.19",
