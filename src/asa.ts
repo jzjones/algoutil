@@ -11,7 +11,7 @@ type ASAParams = {
   assetName: string,
   assetURL: string,
   assetMetadataHash: string,
-  total: number,
+  total: number | bigint,
   note?: Uint8Array,
   decimals: number,
   unitName: string,
