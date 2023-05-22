@@ -59,7 +59,7 @@ type SendASAProps = {
   from: Account,
   to: string,
   assetId: number,
-  amount: number
+  amount: number | bigint
 }
 
 export async function sendASA(props: SendASAProps) {
